@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raigardas Tautkus, Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li id="mid"><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="frame"></div>
+      <div class="content content--canvas">
+        <section class="hero">
+          <div class="herocon">
+            <h3>I'm <span>Raigardas</span></h3>
+            <h2>MY LIFE BEGINS AS A</h2>
+            <h1>DEVELOPER</h1>
+            <a href="#projects">PROJECTS</a>
+          </div>
+        </section>
+      </div>
+      <section class="projects" id="projects">
+        <h1>MY PROJECTS</h1>
+
+        <span class="separator"></span>
+        <img src="/icons/squares.svg" alt="" id="squares1">
+        <img src="/icons/squares.svg" alt="" id="squares2">
+
+        <div class="projContainer " onclick="clickedProject(event)">
+          <div class="project" id="firstProj"></div>
+          <div class="project" id="secondProj"></div>
+          <div class="project" id="thirdProj"></div>
+          <div class="project" id="fourthProj"></div>
+          <div class="project" id="fifthProj"></div>
+          <div class="project" id="sixthProj"></div>
+        </div>
+      </section>
+      <section class="skills">
+        <h1>Skills & Key Attributes</h1>
+        <div class="skillsContainer">
+          <div class="skill skill-html">
+            <img src="./icons/html.svg" alt="htmlicon" />
+            <h4>HTML</h4>
+          </div>
+          <div class="skill skill-jQuery">
+            <img src="./icons/jquery.svg" alt="" />
+            <h4>jQuery</h4>
+          </div>
+          <div class="skill skill-css">
+            <img src="./icons/css.svg" alt="" />
+            <h4>CSS</h4>
+          </div>
+          <div class="skill skill-sass">
+            <img src="./icons/sass.svg" alt="" />
+            <h4>SASS</h4>
+          </div>
+          <div class="skill skill-js">
+            <img src="./icons/javascript.svg" alt="" />
+            <h4>JavaScript + ES6</h4>
+          </div>
+        </div>
+        <div class="attributeContainer">
+          <div class="attribute">
+            <img src="/icons/palette.svg" alt="palette" />
+            <h2>Creative</h2>
+            <p>
+              Creativity has been a part of my life since day one, it has helped me stay unique and innovative.
+            </p>
+          </div>
+          <div class="attribute">
+            <img src="/icons/users.svg" alt="users" />
+            <h2>Team Player</h2>
+            <p>
+              Working in a team environment is one of my strong suits. A well-coordinated team is the key to an efficient company.
+            </p>
+          </div>
+          <div class="attribute">
+            <img src="/icons/book.svg" alt="book" />
+            <h2>Avid Learner</h2>
+            <p>
+              I constantly look out for new and upcoming technologies and design, programming, tech trends and I learn new skills and improve on a daily basis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <img src="/icons/paperplane.svg" alt="" id="plane1" />
+        <img src="/icons/paperplane.svg" alt="" id="plane2" />
+        <img src="/icons/paperplane.svg" alt="" id="plane3" />
+        <img src="/icons/paperplane.svg" alt="" id="plane4" />
+        <div class="contactContainer">
+          <h1>Contact Me</h1>
+          <form action="https://formspree.io/xnqgvyqn" method="POST">
+            <input
+              name="Name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+              required
+            />
+            <input
+              name="Email"
+              type="email"
+              class="feedback-input"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="Message"
+              class="feedback-input"
+              placeholder="Message"
+              required
+            ></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; Raigardas Tautkus 2020</p>
+        <div class="iconcontainer">
+          <a href="https://www.github.com/"
+            ><img src="./icons/github.svg" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/"
+            ><img src="./icons/linkedin.svg" alt=""
+          /></a>
+        </div>
+      </footer>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <button class="closeBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="first">
+          <img src="SuppleSport2.PNG" class="previewImg" alt="" />
+        </div>
+
+        <div class="second">
+          <div class="about">
+            <h2 class="modalHeading">`</h2>
+            <p class="modalText">
+            </p>
+            <a href="./supplement">Preview</a
+            ><a href="/index.html">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="js/script.js"></script>
+    <script src="js/noise.min.js"></script>
+    <script src="js/swirl.js"></script>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>

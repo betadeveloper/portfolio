@@ -1,0 +1,25 @@
+<svg id="icons8-css3" xmlns="http://www.w3.org/2000/svg" width="88.428" height="98.831" viewBox="0 0 88.428 98.831">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0277bd;
+      }
+
+      .cls-2 {
+        fill: #039be5;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #eee;
+      }
+    </style>
+  </defs>
+  <path id="Path_5" data-name="Path 5" class="cls-1" d="M95.428,5H7l7.8,88.428,36.412,10.4,36.412-10.4L95.428,5Z" transform="translate(-7 -5)"/>
+  <path id="Path_6" data-name="Path 6" class="cls-2" d="M24,8V90.966l29.129-8.323L59.631,8Z" transform="translate(20.214 -0.198)"/>
+  <path id="Path_7" data-name="Path 7" class="cls-3" d="M47.668,13H24V23.4H36.744l-.78,10.4H24v10.4H35.444l-.78,11.7L24,59.555V70.478l20.547-6.762,1.821-29.91h0Z" transform="translate(20.214 7.807)"/>
+  <path id="Path_8" data-name="Path 8" class="cls-4" d="M38.728,13V23.4H15.58L14.8,13ZM26.764,33.807l.52,10.4H38.728v-10.4Zm1.04,15.6H17.4l.78,14.3,20.547,6.762V59.555L28.064,55.914Z" transform="translate(5.486 7.807)"/>
+</svg>
