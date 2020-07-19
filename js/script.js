@@ -39,7 +39,7 @@ function closeModal(modal) {
 function clickedProject(event) { 
     switch(event.target.id) {
         case "firstProj":
-        modalImg.src="SuppleSport2.PNG"
+        modalImg.src="/images/SuppleSport2.PNG"
         modalHeading.innerText = "Supplement Landing Page"
         modalText.innerText = "Front-End for a landing page for protein supplements with dynamically changing prices according to selection using JavaScript. Made using TailWindCSS. Highlights Front-End and design skills."
       break;

@@ -31,21 +31,18 @@ nav {
   margin: auto;
   min-height: 10vh;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 nav ul {
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
   list-style: none;
   font-size: 1.5rem;
   color: white;
   z-index: 2;
-}
-nav ul li {
-  margin-left: 7rem;
+  width: 40%;
+  justify-content: space-between;
 }
 
 a {
@@ -175,7 +172,7 @@ a {
 }
 
 #firstProj {
-  background-image: url(/SuppleSport.PNG)
+  background-image: url(/images/SuppleSport.PNG);
 }
 
 #firstProj::before {
@@ -191,7 +188,7 @@ a {
 
 
 #thirdProj {
-  background-image: url(/photogen.PNG);
+  background-image: url(/images/photogen.PNG);
 }
 
 .separator {
@@ -567,9 +564,6 @@ footer img {
   }
   .projContainer {
     padding: 0;
-  }
-  #firstProj {
-    margin-top: 4rem;
   }
   .about a {
     text-align: center;

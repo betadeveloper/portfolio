@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="about">About me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li id="mid"><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
       <div class="frame"></div>
       <div class="content content--canvas">
         <section class="hero">
@@ -32,10 +33,10 @@
         <h1>MY PROJECTS</h1>
 
         <span class="separator"></span>
-        <img src="/icons/squares.svg" alt="" id="squares1">
-        <img src="/icons/squares.svg" alt="" id="squares2">
+        <img src="./icons/squares.svg" alt="" id="squares1" />
+        <img src="./icons/squares.svg" alt="" id="squares2" />
 
-        <div class="projContainer " onclick="clickedProject(event)">
+        <div class="projContainer" onclick="clickedProject(event)">
           <div class="project" id="firstProj"></div>
           <div class="project" id="secondProj"></div>
           <div class="project" id="thirdProj"></div>
@@ -65,38 +66,42 @@
           </div>
           <div class="skill skill-js">
             <img src="./icons/javascript.svg" alt="" />
-            <h4>JavaScript + ES6</h4>
+            <h4>JavaScript</h4>
           </div>
         </div>
         <div class="attributeContainer">
           <div class="attribute">
-            <img src="/icons/palette.svg" alt="palette" />
+            <img src="./icons/palette.svg" alt="palette" />
             <h2>Creative</h2>
             <p>
-              Creativity has been a part of my life since day one, it has helped me stay unique and innovative.
+              Creativity has been a part of my life since day one, it has helped
+              me stay unique and innovative.
             </p>
           </div>
           <div class="attribute">
-            <img src="/icons/users.svg" alt="users" />
+            <img src="./icons/users.svg" alt="users" />
             <h2>Team Player</h2>
             <p>
-              Working in a team environment is one of my strong suits. A well-coordinated team is the key to an efficient company.
+              Working in a team environment is one of my strong suits. A
+              well-coordinated team is the key to an efficient company.
             </p>
           </div>
           <div class="attribute">
-            <img src="/icons/book.svg" alt="book" />
+            <img src="./icons/book.svg" alt="book" />
             <h2>Avid Learner</h2>
             <p>
-              I constantly look out for new and upcoming technologies and design, programming, tech trends and I learn new skills and improve on a daily basis.
+              I constantly look out for new and upcoming technologies and
+              design, programming, tech trends and I learn new skills and
+              improve on a daily basis.
             </p>
           </div>
         </div>
       </section>
       <section class="contact" id="contact">
-        <img src="/icons/paperplane.svg" alt="" id="plane1" />
-        <img src="/icons/paperplane.svg" alt="" id="plane2" />
-        <img src="/icons/paperplane.svg" alt="" id="plane3" />
-        <img src="/icons/paperplane.svg" alt="" id="plane4" />
+        <img src="./icons/paperplane.svg" alt="" id="plane1" />
+        <img src="./icons/paperplane.svg" alt="" id="plane2" />
+        <img src="./icons/paperplane.svg" alt="" id="plane3" />
+        <img src="./icons/paperplane.svg" alt="" id="plane4" />
         <div class="contactContainer">
           <h1>Contact Me</h1>
           <form action="https://formspree.io/xnqgvyqn" method="POST">
@@ -118,6 +123,7 @@
               name="Message"
               class="feedback-input"
               placeholder="Message"
+              maxlength="2500"
               required
             ></textarea>
             <input type="submit" value="SUBMIT" />
@@ -126,6 +132,7 @@
       </section>
       <footer>
         <p>&copy; Raigardas Tautkus 2020</p>
+        <p>Email: raitaut@gmail.com</p>
         <div class="iconcontainer">
           <a href="https://www.github.com/"
             ><img src="./icons/github.svg" alt=""
@@ -142,16 +149,15 @@
       </div>
       <div class="modal-body">
         <div class="first">
-          <img src="SuppleSport2.PNG" class="previewImg" alt="" />
+          <img src="/images/SuppleSport2.PNG" class="previewImg" alt="" />
         </div>
 
         <div class="second">
           <div class="about">
             <h2 class="modalHeading">`</h2>
-            <p class="modalText">
-            </p>
-            <a href="./supplement">Preview</a
-            ><a href="/index.html">Source Code</a>
+            <p class="modalText"></p>
+            <a href="./supplement">Preview</a>
+            <a href="/index.html">Source Code</a>
           </div>
         </div>
       </div>
@@ -160,6 +166,5 @@
     <script src="js/script.js"></script>
     <script src="js/noise.min.js"></script>
     <script src="js/swirl.js"></script>
-    <script src="jquery.min.js"></script>
   </body>
 </html>
