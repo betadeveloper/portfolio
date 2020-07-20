@@ -21,7 +21,7 @@ body {
 header {
   background: hsla(260, 40%, 5%, 1);
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 2;
 }
 
@@ -35,14 +35,24 @@ nav {
 }
 
 nav ul {
-  flex-wrap: wrap;
   display: flex;
   list-style: none;
   font-size: 1.5rem;
   color: white;
   z-index: 2;
-  width: 40%;
+  width: 600px;
   justify-content: space-between;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
 }
 
 a {
@@ -66,7 +76,7 @@ a {
   transition: all 0.3s ease;
 }
 .herocon span:hover {
-  color: var(--mainPink)
+  color: var(--mainPink);
 }
 
 .hero {
@@ -124,7 +134,7 @@ a {
 .projects {
   font-family: "Montserrat", sans-serif;
   background: var(--backgroundBlue);
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +172,7 @@ a {
   background-size: 100% 100%;
 }
 .project:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .project::before {
@@ -179,13 +189,12 @@ a {
   content: "Supplement Landing Page";
 }
 #secondProj::before {
-  content: "Weather App with OWM API"
+  content: "Weather App with OWM API";
 }
 
 #thirdProj::before {
-  content:"Photo Generator with Pexels API"
+  content: "Photo Generator with Pexels API";
 }
-
 
 #thirdProj {
   background-image: url(/images/photogen.PNG);
@@ -235,7 +244,7 @@ a {
   background-color: rgb(15, 11, 22);
   padding: 2rem;
   flex-wrap: wrap;
-  box-shadow: 1px 1px .2rem rgb(25, 19, 26);
+  box-shadow: 1px 1px 0.2rem rgb(25, 19, 26);
 }
 
 .skill {
@@ -274,7 +283,7 @@ a {
   margin: 1rem 2rem;
   background-color: rgb(15, 11, 22);
   color: white;
-  box-shadow: 1px 1px .75rem rgb(25, 19, 26);
+  box-shadow: 1px 1px 0.75rem rgb(25, 19, 26);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +304,7 @@ a {
   margin-bottom: 1rem;
 }
 
-.attribute p{
+.attribute p {
   font-family: "Helvetica", sans-serif;
 }
 
@@ -357,7 +366,7 @@ a {
   display: flex;
 }
 
-.previewImg{
+.previewImg {
   flex: 1;
   max-width: 100%;
   height: auto;
@@ -413,7 +422,7 @@ a {
 /* Contact */
 
 .contact {
-  height: 90vh;
+  min-height: 100vh;
   background-color: var(--backgroundBlue);
   display: flex;
   align-items: center;
@@ -526,10 +535,12 @@ footer img {
   display: flex;
   margin-right: 3rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-height: 720px) {
-  #plane3, #plane4 {
+  #plane3,
+  #plane4 {
     display: none;
   }
 }
@@ -541,7 +552,8 @@ footer img {
   .modal {
     top: -30%;
   }
-  #plane1, #plane2 {
+  #plane1,
+  #plane2 {
     display: none;
   }
 }
@@ -579,13 +591,52 @@ footer img {
   .second {
     padding: 0;
   }
-  .contactContainer{
+  .contactContainer {
     margin: 2rem;
   }
   .skills h1 {
     text-align: center;
   }
-  #squares1, #squares2{
+  #squares1,
+  #squares2 {
     display: none;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    right: 0;
+    background-color: rgb(39, 9, 68);
+    transition: all 0.8s ease;
+  }
+  .active {
+    display: block;
+  }
+  ul {
+    flex-direction: column;
+    margin: 25vh 2.5rem;
+  }
+  ul li {
+    margin: 1rem 0;
+  }
+  .burger {
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 1rem;
+  }
+
+  #firstProj {
+    margin-top: 4rem;
+  }
+  .project {
+    margin-top: 2rem;
+  }
+  #sixthProj {
+    margin-bottom: 4rem;
+  }
+  footer p {
+    padding: 1rem;
   }
 }
