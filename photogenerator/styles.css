@@ -2,37 +2,39 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: rgb(240, 240, 240);
 }
 
-header {
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 30vh;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(/white-cloudy-blue-sky-133953.jpg);
+  background-position: center;
+  min-height: 60vh;
+  color: white;
+  margin-bottom: 5rem;
 }
 
-header #logo {
+#logo {
   text-decoration: none;
-  color: black;
-}
-
-header h2 {
-  padding: 2rem;
+  color: white;
 }
 
 .search-form {
@@ -40,6 +42,13 @@ header h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 35%;
+  min-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  max-width: 600px;
 }
 
 .search-form input {
@@ -47,15 +56,15 @@ header h2 {
   padding: 0.5rem;
   width: 100%;
   border: none;
-  border: 1px solid #8e8ada;
 }
 
 .search-form button {
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
-  background: #8a85ca;
+  background: #59b87d;
   color: white;
+  cursor: pointer;
 }
 
 .gallery-info {
@@ -63,13 +72,17 @@ header h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: gray;
   padding: 0.5rem 0rem;
+}
+.gallery-img {
+  margin-top: 2rem;
+  position: relative;
 }
 
 .gallery-info a {
@@ -79,34 +92,51 @@ header h2 {
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr)) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 2rem 0rem;
   width: 80%;
   margin: auto;
   row-gap: 5rem;
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
+  -webkit-column-gap: 5rem;
+  column-gap: 5rem;
 }
 
 .gallery-img img {
   width: 100%;
   height: 100%;
+  max-height: 650px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
+.gallery-img {
+  transition: all 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.1);
+}
 .nav-button {
   min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.dlBtn {
+  bottom: -10px;
+  position: absolute;
+  background-color: #59b87d;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 .more {
@@ -117,4 +147,3 @@ header h2 {
   cursor: pointer;
   color: white;
 }
-/*# sourceMappingURL=styles.css.map */

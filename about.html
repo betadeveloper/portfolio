@@ -11,11 +11,16 @@
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/#projects">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="about">About me</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="burger" onclick="toggleNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
     <main>
       <div class="contentContainer">
@@ -43,6 +48,19 @@
           </div>
         </div>
       </div>
+      <footer>
+        <p>&copy; Raigardas Tautkus 2020</p>
+        <p>Email: raitaut@gmail.com</p>
+        <div class="iconcontainer">
+          <a href="https://github.com/betadeveloper/"
+            ><img src="./icons/github.svg" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/"
+            ><img src="./icons/linkedin.svg" alt=""
+          /></a>
+        </div>
+      </footer>
     </main>
+    <script src="js/aboutScript.js"></script>
   </body>
 </html>
