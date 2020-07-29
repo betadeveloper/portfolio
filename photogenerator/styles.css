@@ -10,6 +10,22 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: sticky;
+  top: -1px;
+  padding-top: 1px;
+  margin-top: -480px;
+  z-index: 999;
+}
+
+nav.isSticky {
+  background-color: #00a0ae;
+  opacity: 0.95;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +34,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 30vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -29,7 +44,7 @@ body {
   background-position: center;
   min-height: 60vh;
   color: white;
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
 }
 
 #logo {
@@ -38,7 +53,7 @@ body {
 }
 
 .search-form {
-  padding: 2rem;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,10 +76,13 @@ h2 {
 .search-form button {
   border: none;
   padding: 0.5rem;
-  font-size: 1rem;
   background: #59b87d;
   color: white;
   cursor: pointer;
+}
+
+main {
+  margin-top: 150px;
 }
 
 .gallery-info {
@@ -146,4 +164,10 @@ h2 {
   border: none;
   cursor: pointer;
   color: white;
+}
+
+@media screen and (max-height: 812px) {
+  nav {
+    margin-top: -425px;
+  }
 }

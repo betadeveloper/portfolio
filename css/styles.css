@@ -161,10 +161,10 @@ a {
 .project {
   position: relative;
   flex: 1 1 25rem;
-  min-height: 15rem;
+  min-height: 16rem;
   margin: 10px;
   background-color: white;
-  margin: 1.5rem;
+  margin: 2rem;
   max-width: 25rem;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -212,6 +212,12 @@ a {
 }
 #fifthProj::before {
   content: "Cookie Notification Alert";
+}
+#sixthProj {
+  background-image:url(/images/ColorGenIMG.PNG);
+}
+#sixthProj::before {
+  content:"Color Palette Generator"
 }
 
 .separator {
@@ -585,9 +591,6 @@ footer img {
   .herocon h2 {
     font-size: 2rem;
   }
-  .project {
-    width: 100%;
-  }
   .projContainer {
     padding: 0;
   }
@@ -643,9 +646,6 @@ footer img {
 
   #firstProj {
     margin-top: 4rem;
-  }
-  .project {
-    margin-top: 2rem;
   }
   #sixthProj {
     margin-bottom: 4rem;
