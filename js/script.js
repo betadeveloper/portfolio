@@ -61,7 +61,7 @@ function clickedProject(event) {
       modalHeading.innerText = "Photo Generator using Pexels API";
       modalText.innerText =
         "A photo generator which takes data from the Pexels API and returns result to load images on demand. This project highlights my ability to work with APIs, asynchronous JavaScript and JavaScipt promises";
-      previewBtn.href = "/photogenerator/index.html";
+      previewBtn.href = "/photogenerator/";
       sourceBtn.href = "https://github.com/betadeveloper/PhotoGenerator";
       break;
     case "fourthProj":
