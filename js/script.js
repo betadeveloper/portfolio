@@ -39,24 +39,28 @@ function closeModal(modal) {
 function clickedProject(event) {
   switch (event.target.id) {
     case "firstProj":
-      modalImg.src = "/images/SuppleSport2.PNG";
+      modalImg.src = "/images/SuppleSport.PNG";
       modalHeading.innerText = "Supplement Landing Page";
       modalText.innerText =
         "Front-End for a landing page for protein supplements with dynamically changing prices according to selection using JavaScript. Made using TailWindCSS. Highlights Front-End and design skills.";
       break;
 
     case "secondProj":
-      modalImg.src = "/images/photogen.PNG";
-      modalHeading.innerText = "Weather App with OWM API";
+      modalImg.src = "/images/WeatherAppIMG.PNG";
+      modalHeading.innerText = "Weather App using OWM API";
+      modalText.innerText =
+        "A Weather app that takes your current location and displays the weather that it retrieves from the Open Weather Map API. Includes a search bar to search for a city in the world and get weather data from it. Clicking the temperature displays the fahrenheit equivalent.";
+      previewBtn.href = "/weatherapp/index.html";
+      sourceBtn.href = "https://github.com/betadeveloper/WeatherApp";
       break;
 
     case "thirdProj":
       modalImg.src = "/images/photogen.PNG";
-      modalHeading.innerText = "Photo Generator with Pexels API";
+      modalHeading.innerText = "Photo Generator using Pexels API";
       modalText.innerText =
         "A photo generator which takes data from the Pexels API and returns result to load images on demand. This project highlights my ability to work with APIs, asynchronous JavaScript and JavaScipt promises";
-      previewBtn.href="/photogenerator/index.html"
-      sourceBtn.href="https://github.com/betadeveloper/PhotoGenerator";
+      previewBtn.href = "/photogenerator/index.html";
+      sourceBtn.href = "https://github.com/betadeveloper/PhotoGenerator";
       break;
     case "fourthProj":
       modalImg.src = "/images/portfolioIMG.PNG";

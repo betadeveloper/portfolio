@@ -168,8 +168,6 @@ a {
   max-width: 25rem;
   transition: all 0.3s ease;
   cursor: pointer;
-  background-position: center;
-  background-origin: content-box;
   background-size: 100% 100%;
 }
 .project:hover {
@@ -189,12 +187,15 @@ a {
 #firstProj::before {
   content: "Supplement Landing Page";
 }
+#secondProj {
+  background-image: url(/images/WeatherAppIMG.PNG);
+}
 #secondProj::before {
-  content: "Weather App with OWM API";
+  content: "Weather App using OWM API";
 }
 
 #thirdProj::before {
-  content: "Photo Generator with Pexels API";
+  content: "Photo Generator using Pexels API";
 }
 
 #thirdProj {
@@ -214,10 +215,10 @@ a {
   content: "Cookie Notification Alert";
 }
 #sixthProj {
-  background-image:url(/images/ColorGenIMG.PNG);
+  background-image: url(/images/ColorGenIMG.PNG);
 }
 #sixthProj::before {
-  content:"Color Palette Generator"
+  content: "Color Palette Generator";
 }
 
 .separator {
@@ -395,6 +396,7 @@ a {
 .about {
   flex: 1;
   color: white;
+  padding-left: 2rem;
 }
 
 .about p,
@@ -565,7 +567,7 @@ footer img {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .modal-body {
     flex-direction: column;
   }
@@ -575,6 +577,13 @@ footer img {
   #plane1,
   #plane2 {
     display: none;
+  }
+  .about {
+    padding-left: 0;
+  }
+  #previewCode,
+  #srcCode {
+    margin-left: -2px;
   }
 }
 
@@ -660,5 +669,11 @@ footer img {
     flex-direction: column;
     margin: 25vh 1rem;
     flex-wrap: nowrap;
+  }
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .modalText {
+    font-size: 1rem;
   }
 }
