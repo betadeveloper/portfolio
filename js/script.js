@@ -43,6 +43,8 @@ function clickedProject(event) {
       modalHeading.innerText = "Supplement Landing Page";
       modalText.innerText =
         "Front-End for a landing page for protein supplements with dynamically changing prices according to selection using JavaScript. Made using TailWindCSS. Highlights Front-End and design skills.";
+      previewBtn.href = "/supplement/";
+      sourceBtn.href = "https://github.com/betadeveloper/Supplements";
       break;
 
     case "secondProj":
@@ -50,7 +52,7 @@ function clickedProject(event) {
       modalHeading.innerText = "Weather App using OWM API";
       modalText.innerText =
         "A Weather app that takes your current location and displays the weather that it retrieves from the Open Weather Map API. Includes a search bar to search for a city in the world and get weather data from it. Clicking the temperature displays the fahrenheit equivalent.";
-      previewBtn.href = "/weatherapp/index.html";
+      previewBtn.href = "/weatherapp/";
       sourceBtn.href = "https://github.com/betadeveloper/WeatherApp";
       break;
 
@@ -75,7 +77,7 @@ function clickedProject(event) {
       modalHeading.innerText = "Cookie Alert";
       modalText.innerText =
         "A website I created that displays a cookie notification for the user. The user can either accept or decline the cookies and their preference is saved in the local storage. Useful for websites targeted towards EU citizens.";
-      previewBtn.href = "/CookieAlert/index.html";
+      previewBtn.href = "/CookieAlert/";
       sourceBtn.href = "https://github.com/betadeveloper/CookieNotification";
       break;
     case "sixthProj":
@@ -83,7 +85,7 @@ function clickedProject(event) {
       modalHeading.innerText = "Color Palette Generator";
       modalText.innerText =
         "A web app that creates a random color palette that you can save and the palette gets stored in the local storage. This web app is quite useful when creating websites or generating color ideas for projects.";
-      previewBtn.href = "/ColorGen/index.html";
+      previewBtn.href = "/ColorGen/";
       sourceBtn.href = "https://github.com/betadeveloper/ColorPalleteGenerator";
   }
 }
