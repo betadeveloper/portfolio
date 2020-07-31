@@ -102,7 +102,8 @@ weather.temperature = {
 function setPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
-
+  console.log(position.coords.latitude);
+  console.log(position.coords.latitude);
   getWeather(latitude, longitude);
 }
 
