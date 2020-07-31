@@ -1,168 +1,178 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap";
 
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
-font-family:"Montserrat","serif";
+  font-family: "Montserrat", "serif";
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
 }
 
 .hero {
-font-family:"Montserrat","serif";
-height:55vh;
-padding:5rem 0;
-background-image:url(./pictures/heroimg.jpg);
-background-position:center;
-background-repeat:no-repeat;
+  font-family: "Montserrat", "serif";
+  height: 55vh;
+  padding: 5rem 0;
+  background-image: url(./pictures/heroimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
 }
 
 .hero h1 {
-color:#fff;
-font-size:4rem;
-font-weight:700;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .preview {
-transition:all .3s ease;
-cursor:pointer;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .preview:hover {
-transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 .logo {
-font-family:"Montserrat","serif";
-font-weight:700;
-cursor:pointer;
-position:relative;
+  font-family: "Montserrat", "serif";
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
 }
 
 header {
-transition:all .3s ease;
+  transition: all 0.3s ease;
 }
 
-#logo,#footlogo {
-height:50px;
-border:2px solid #000;
-border-radius:50%;
-background-color:#48bb78;
+#logo,
+#footlogo {
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #48bb78;
 }
 
 .line {
-position:absolute;
-height:3px;
-width:70px;
-background-color:#48bb78;
-top:35px;
+  position: absolute;
+  height: 3px;
+  width: 70px;
+  background-color: #48bb78;
+  top: 35px;
 }
 
 #secword {
-color:#48bb78;
+  color: #48bb78;
 }
 
 .benefits {
-background-color:#edf2f7;
+  background-color: #edf2f7;
 }
 
 .card {
-background-color:#fff;
-padding-bottom:2rem;
-z-index:1;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  z-index: 1;
 }
 
 .watermark {
-position:absolute;
-white-space:nowrap;
-font-size:18rem;
-font-family:"Times New Roman",serif;
-opacity:.04;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 18rem;
+  font-family: "Times New Roman", serif;
+  opacity: 0.04;
 }
 
-nav a::before,.card a::before {
-content:"";
-position:absolute;
-width:100%;
-height:2px;
-bottom:0;
-left:0;
-background-color:#38a169;
-visibility:hidden;
-transform:scaleX(0);
-transition:all .3s ease-in-out 0s;
+nav a::before,
+.card a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #38a169;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
-nav a:hover::before,.card a:hover::before {
-visibility:visible;
-transform:scaleX(1);
+nav a:hover::before,
+.card a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
-button:active,button:focus {
-outline:0;
-border:none;
+button:active,
+button:focus {
+  outline: 0;
+  border: none;
 }
 
 .loved {
-transition:all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .lovebtn:active > .loved {
-transform:scale(2);
+  transform: scale(2);
 }
 
 .filled {
-fill:#48bb78;
+  fill: #48bb78;
 }
 
 main {
-animation:load 1.5s;
+  animation: load 1.5s;
 }
 
 footer svg {
-transition:all .3s ease;
+  transition: all 0.3s ease;
 }
 
-footer svg:hover,.contactlinks svg:hover {
-fill:#48bb78;
+footer svg:hover,
+.contactlinks svg:hover {
+  fill: #48bb78;
 }
 
 @keyframes load {
-from {
-opacity:0;
-transform:rotateX(-10deg);
-}
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
 
-to {
-opacity:1;
-transform:rotateX(0);
-}
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
-.card {
-margin:1.5rem 0!important;
-}
+  .card {
+    margin: 1.5rem 0 !important;
+  }
 
-.nav {
-height:15vh;
-background-color:#fff;
-}
+  .nav {
+    height: 15vh;
+    background-color: #fff;
+  }
 
-header {
-height:15vh!important;
-}
+  header {
+    height: 15vh !important;
+  }
 }
 
 @media screen and (max-width: 390px) {
-nav a {
-font-size:.6rem!important;
-}
+  nav a {
+    font-size: 0.6rem !important;
+  }
 
-.hero h1 {
-font-size:3rem!important;
-}
+  .hero h1 {
+    font-size: 3rem !important;
+  }
 }
