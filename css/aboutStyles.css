@@ -30,13 +30,12 @@ nav {
 }
 
 nav ul {
-  flex-wrap: wrap;
   display: flex;
   list-style: none;
   font-size: 1.5rem;
   color: white;
   z-index: 2;
-  width: 40%;
+  width: 600px;
   justify-content: space-between;
 }
 
@@ -133,14 +132,16 @@ h1 {
 /* Footer */
 
 footer {
-  position: absolute;
   font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   justify-content: space-between;
   min-height: 10vh;
   bottom: 0;
-  min-width: 80%;
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer p {
@@ -153,15 +154,23 @@ footer img {
 
 .iconcontainer {
   display: flex;
-  margin-right: 3rem;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-height: 600px) {
+  footer {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 678px) {
   .contentContainer {
     flex-direction: column;
     margin: 0;
+  }
+  footer {
+    position: static;
   }
   .contentContainer img {
     margin: 2rem auto;
@@ -181,7 +190,6 @@ footer img {
   ul {
     flex-direction: column;
     margin: 25vh 2.5rem;
-    flex-wrap: nowrap;
   }
   ul li {
     margin: 1rem 0;
@@ -192,6 +200,9 @@ footer img {
     display: block;
     right: 2rem;
     top: 1rem;
+  }
+  footer p {
+    padding: 1rem;
   }
 }
 
@@ -211,5 +222,15 @@ footer img {
     flex-direction: column;
     margin: 25vh 1rem;
     flex-wrap: nowrap;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    padding: .5rem;
+  }
+  footer img {
+    margin: .5rem;
+    margin-top: 1rem;
   }
 }

@@ -476,7 +476,7 @@ a {
 textarea {
   height: 150px;
   line-height: 150%;
-  resize: vertical;
+  resize: none;
 }
 
 [type="submit"] {
