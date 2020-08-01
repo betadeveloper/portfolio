@@ -204,6 +204,9 @@ footer img {
   footer p {
     padding: 1rem;
   }
+  .rightCol {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 416px) {
@@ -227,10 +230,10 @@ footer img {
     flex-direction: column;
   }
   footer p {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   footer img {
-    margin: .5rem;
+    margin: 0.5rem;
     margin-top: 1rem;
   }
 }
