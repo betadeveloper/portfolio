@@ -623,6 +623,9 @@ footer img {
   .skills h1 {
     text-align: center;
   }
+  .rightCol {
+    padding: 0;
+  }
   #squares1,
   #squares2 {
     display: none;
