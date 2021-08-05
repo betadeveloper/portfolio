@@ -68,7 +68,8 @@ main {
   display: flex;
   color: white;
   margin-top: 5rem;
-  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 3rem;
 }
 .contentContainer img {
   width: 300px;
@@ -90,12 +91,15 @@ h1 {
 .rightCol {
   display: flex;
   flex-direction: column;
-  padding-left: 3rem;
   max-width: 600px;
 
 }
 .rightCol p {
   font-size: 1.1rem;
+}
+.maincont {
+  display: flex;
+  justify-content: space-between;
 }
 
 .rig .buttons {
@@ -147,6 +151,14 @@ footer img {
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1200px) {
+  .maincont {
+    flex-direction: column;
+  }
+  .programimage img {
+    display: none;
+  }
+}
 
 @media screen and (max-height: 600px) {
   footer {
@@ -158,9 +170,7 @@ footer img {
   .contentContainer {
     margin: 0;
   }
-
-
-  footer {
+footer {
     position: static;
   }
   .contentContainer img {
@@ -198,7 +208,11 @@ footer img {
   .rightCol {
     padding: 0;
   }
-}
+  main {
+    padding-top: 25%;
+  }
+  }
+
 
 @media screen and (max-width: 416px) {
   .buttons a {
