@@ -60,7 +60,7 @@ function clickedProject(event) {
       modalImg.src = "/images/photogen.PNG";
       modalHeading.innerText = "Photo Generator using Pexels API";
       modalText.innerText =
-        "A photo generator which takes data from the Pexels API and returns result to load images on demand. This project highlights my ability to work with APIs, asynchronous JavaScript and JavaScipt promises";
+        "A photo generator which takes data from the Pexels API and returns result to load images on demand. This project works with APIs, asynchronous JavaScript, and JavaScript promises";
       previewBtn.href = "/photogenerator/";
       sourceBtn.href = "https://github.com/betadeveloper/PhotoGenerator";
       break;
@@ -84,7 +84,7 @@ function clickedProject(event) {
       modalImg.src = "/images/ColorGenIMG.PNG";
       modalHeading.innerText = "Color Palette Generator";
       modalText.innerText =
-        "A web app that creates a random color palette that you can save and the palette gets stored in the local storage. This web app is quite useful when creating websites or generating color ideas for projects.";
+        "A web app that creates a random color palette that can be saved, and the palette gets stored in the local storage. Project created using HTML, CSS, JavaScript, jQuery and some SASS.";
       previewBtn.href = "/ColorGen/";
       sourceBtn.href = "https://github.com/betadeveloper/ColorPalleteGenerator";
   }
