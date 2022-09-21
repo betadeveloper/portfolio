@@ -222,8 +222,8 @@ a {
 }
 
 .separator {
-  width: 8rem;
-  height: 5px;
+  width: 12rem;
+  height: 6px;
   background-color: var(--mainPink);
 }
 
