@@ -50,6 +50,15 @@ nav ul li {
   padding: 0 2rem;
 }
 
+nav img {
+  width: 70px;
+  transition-duration: 0.1s;
+}
+
+nav img:hover {
+  filter:invert(15%);
+}
+
 .burger div {
   width: 25px;
   height: 3px;
