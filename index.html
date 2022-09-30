@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Raigardas Tautkus">
     <title>Raigardas Tautkus, Web Developer</title>
-    
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M3W4ZQ8');</script>
-    
     <link rel="icon" href="/icons/icon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -18,10 +12,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/" id="home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="about">About me</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="#contact" id="contact">Contact</a></li>
+          <li><a id="login" href="login.html">Login</a></li>
         </ul>
       </nav>
       <div class="burger" onclick="toggleNav()">
@@ -58,6 +53,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="project" id="fifthProj"></div>
           <div class="project" id="sixthProj"></div>
         </div>
+        
+        <h1>OTHER PROJECTS</h1>
+        <span class="separator"></span>
+
+        <div class="projContainer" onclick="clickedProject(event)">
+          <div class="project" ></div>
+          <div class="project" ></div>
+          <div class="project" ></div>
+          <div class="project" ></div>
+          <div class="project" ></div>
+          <div class="project" ></div>
+        </div>
       </section>
       <section class="skills">
         <h1>Skills & Key Attributes</h1>
@@ -89,14 +96,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="attributeContainer">
           <div class="attribute">
-            <img src="./icons/palette.svg" alt="palette" />
-            <h2>Leader</h2>
+            <img src="./icons/palette.svg" alt="leader" />
+            <h2>Creative Leader</h2>
             <p>
-              Throughout my career in university, 
+              Throughout my studies in university, 
               I've been involved in many management 
               and team-leadership roles. They have allowed 
               me to realize that I have a passion and talent 
-              for coordinating projects and processes in a team-based environment
+              for coordinating projects and processes in a team-based environment.
+              Creativity is a big part of a successful leadership.
             </p>
           </div>
           <div class="attribute">
@@ -104,8 +112,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2>Team Player</h2>
             <p>
              Working in a team environment is an essential part of any IT project. 
-             ained experience through university group projects and VU students' 
-             representation activities
+             Gained experience through university group projects, VU students' 
+             representation activities and other extracurricular courses.
             </p>
           </div>
           <div class="attribute">
@@ -191,16 +199,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="js/script.js"></script>
     <script src="js/noise.min.js"></script>
     <script src="js/swirl.js"></script>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FXJ50Y19T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0FXJ50Y19T');
-</script>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3W4ZQ8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </body>
 </html>

@@ -41,8 +41,13 @@ nav ul {
   font-size: 1.5rem;
   color: white;
   z-index: 2;
-  width: 600px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 2rem;
 }
 
 .burger div {
@@ -534,6 +539,9 @@ form {
   bottom: 5rem;
 }
 
+nav ul li:last-child {
+  margin-left: auto;
+}
 /* Footer */
 
 footer {
@@ -634,6 +642,7 @@ footer img {
     right: 0;
     background-color: rgb(39, 9, 68);
     transition: all 0.8s ease;
+    text-align: center;
   }
   .active {
     display: block;
@@ -660,6 +669,9 @@ footer img {
   }
   footer p {
     padding: 1rem;
+  }
+  nav ul li:last-child {
+    margin-left: 0;
   }
 }
 
