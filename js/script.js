@@ -38,7 +38,7 @@ function closeModal(modal) {
 }
 
 function resetModal() {
-  modalImg.src = "";
+  modalImg.src = "/images/projectcomingsoon.png";
   modalHeading.innerText = "Project coming soon!"
   modalText.innerText = "Coming soon";
   previewBtn.href ="";
