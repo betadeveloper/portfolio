@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/loginStyles.css" />
+    <title>Login to DevRaigardas</title>
 </head>
 <body>
-    <h1>Login page</h1>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/"><img src="./icons/lowreslogo.png"/></a></li>
+            <li><a href="/" id="home">Home</a></li>
+          </ul>
+        </nav>
+        <div class="burger" onclick="toggleNav()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </header>
+      <div class="arrow-container -expand-arrows-animation">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+      <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+    
+        <!-- Start Form Container -->
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked>
+            <input type="radio" name="slider" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup"> Signup</label>
+            <div class="slide-tab"></div>
+          </div>
+    
+          <div class="form-inner">
+    
+            <!-- Start Login Form -->
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="pass-link">
+                <a href="#">
+                  Forgot password?
+                </a>
+              </div>
+              <div class="field">
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="#">Signup now</a>
+              </div>
+            </form>
+    
+            <!-- Start Signup Form -->
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+    
+              <div class="field">
+                <input type="submit" value="Signup">
+              </div>
+    
+            </form>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

@@ -51,7 +51,7 @@ nav ul li {
 }
 
 nav img {
-  width: 70px;
+  width: 50px;
   transition-duration: 0.1s;
 }
 
@@ -195,14 +195,14 @@ a {
 }
 
 #firstProj {
-  background-image: url(/images/SuppleSport.PNG);
+  background-image: url(/images/SuppleSport.webp);
 }
 
 #firstProj::before {
   content: "Supplement Landing Page";
 }
 #secondProj {
-  background-image: url(/images/WeatherAppIMG.PNG);
+  background-image: url(/images/WeatherAppIMG.webp);
 }
 #secondProj::before {
   content: "Weather App using OWM API";
@@ -213,23 +213,23 @@ a {
 }
 
 #thirdProj {
-  background-image: url(/images/photogen.PNG);
+  background-image: url(/images/photogen.webp);
 }
 
 #fourthProj {
-  background-image: url(/images/portfolioIMG.PNG);
+  background-image: url(/images/portfolioIMG.webp);
 }
 #fourthProj::before {
   content: "Personal Portfolio Website";
 }
 #fifthProj {
-  background-image: url(/images/CookieAlertIMG.PNG);
+  background-image: url(/images/CookieAlertIMG.webp);
 }
 #fifthProj::before {
   content: "Cookie Notification Alert";
 }
 #sixthProj {
-  background-image: url(/images/ColorGenIMG.PNG);
+  background-image: url(/images/ColorGenIMG.webp);
 }
 #sixthProj::before {
   content: "Color Palette Generator";
