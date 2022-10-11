@@ -266,6 +266,13 @@ a {
   flex-direction: column;
 }
 
+.skill-react img {
+  max-height: 125px;
+}
+.skill-nodejs img {
+  max-height: 125px;
+}
+
 .skills h1 {
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -283,7 +290,7 @@ a {
 }
 
 .skill {
-  flex: 1;
+  flex: 1 0 21%;
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -32,7 +32,18 @@
       <div class="wrapper">
         <div class="title-text">
           <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
         </div>
+    
+        <!-- Start Form Container -->
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked>
+            <input type="radio" name="slider" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup"> Signup</label>
+            <div class="slide-tab"></div>
+          </div>
     
           <div class="form-inner">
     
@@ -55,6 +66,24 @@
               <div class="signup-link">
                 Not a member? <a href="#">Signup now</a>
               </div>
+            </form>
+    
+            <!-- Start Signup Form -->
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+    
+              <div class="field">
+                <input type="submit" value="Signup">
+              </div>
+    
             </form>
           </div>
         </div>
